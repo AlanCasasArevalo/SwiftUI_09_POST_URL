@@ -4,6 +4,7 @@ import SwiftUI
 import Combine
 
 class Login: ObservableObject {
+    
     var didChange = PassthroughSubject<Login, Never>()
     
     @Published var authentication = 0 {
@@ -36,10 +37,21 @@ class Login: ObservableObject {
                 if let response = response {
                     print(response)
                 }
-                
-                guard let dataDes = data else { return }
-                
-                print(data)
+                do {
+                    guard let dataDes = data else { return }
+                    let result = try JSONDecoder().decode(LoginResponseEntity.self, from: dataDes)
+                    if result.error != nil {
+                        print(result.error)
+                        self.authentication = -1
+                    } else {
+                        DispatchQueue.main.async {
+                            self.authentication = 1
+                            print(result.token)
+                        }
+                    }
+                } catch let error as NSError {
+                    print(error.localizedDescription)
+                }
             }
         }.resume()
     }

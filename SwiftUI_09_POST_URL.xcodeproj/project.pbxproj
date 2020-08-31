@@ -15,6 +15,7 @@
 		51FE7B7724FD5214001F4740 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7B7624FD5214001F4740 /* Preview Assets.xcassets */; };
 		51FE7B7A24FD5214001F4740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7B7824FD5214001F4740 /* LaunchScreen.storyboard */; };
 		51FE7B8324FD5457001F4740 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7B8224FD5457001F4740 /* Login.swift */; };
+		51FE7B8524FD57EB001F4740 /* LoginResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7B8424FD57EB001F4740 /* LoginResponseEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		51FE7B7924FD5214001F4740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51FE7B7B24FD5214001F4740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51FE7B8224FD5457001F4740 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		51FE7B8424FD57EB001F4740 /* LoginResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				51FE7B8224FD5457001F4740 /* Login.swift */,
+				51FE7B8424FD57EB001F4740 /* LoginResponseEntity.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FE7B7024FD5211001F4740 /* SwiftUI_09_POST_URL.xcdatamodeld in Sources */,
+				51FE7B8524FD57EB001F4740 /* LoginResponseEntity.swift in Sources */,
 				51FE7B8324FD5457001F4740 /* Login.swift in Sources */,
 				51FE7B6B24FD5211001F4740 /* AppDelegate.swift in Sources */,
 				51FE7B7224FD5211001F4740 /* ContentView.swift in Sources */,

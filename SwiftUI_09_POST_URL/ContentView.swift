@@ -29,7 +29,18 @@ struct ContentView: View {
                     Text("Login")
                         .font(.system(.title, design: .rounded))
                 }
-                
+                if self.manager.authentication == 1 {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.system(.title, design: .rounded))
+                        .foregroundColor(.green)
+                        .background(Color(.systemGray5))
+                } else if self.manager.authentication == -1 {
+                    Image(systemName: "xmark.shield.fill")
+                        .font(.system(.title, design: .rounded))
+                        .foregroundColor(.red)
+                        .background(Color(.systemGray5))
+
+                }
                 Spacer()
             }
         }.padding()
